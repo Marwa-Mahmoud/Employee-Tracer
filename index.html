@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<!-- Linking jQuery -->
-	<script 
-	src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-
-	<!-- Latest compiled and minified CSS Bootstrap -->
+	<title>Employee Tracker</title>
+	<!-- Latest compiled and minified CSS -->
+	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- Linking stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
 
 </head>
 <body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<h1> Employee Data Management</h1>
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2" >
+		<div class="group-info">
+		<p  id="header-search"></span>List of Employees </p>
+		</div>	
+		</div>
+		
+	</div>
+</div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2" >
+		<div class="group-info">
+			<p id="header-search">Add Employee</p>
+			<form>
+ 			<div class="form-group" id="search-parameters">
+    			<label for="exampleInputEmail1">Employee Name</label>
+   				<input type="text" class="form-control" id="search-term" placeholder="Name">
+  			</div>
+  			<div class="form-group">
+    			<label for="exampleInputPassword1">Role</label>
+    			<input type="text" class="form-control" id="records-numbers" placeholder="Role">
+  			</div>
+    		<div class="form-group">
+    			<label for="exampleInputPassword1">Start Date</label>
+    			<input type="text" class="form-control" id="start-year" placeholder="Date">
+  			</div>
+    		<div class="form-group">
+    			<label for="exampleInputPassword1">Monthly Rate</label>
+    			<input type="text" class="form-control" id="end-year" placeholder="Rate">
+  			</div>
+  				<button type="submit" class="btn btn-default" id="search">Add</button>
+  			 	
+			</form>
+		</div>
+		</div>
+	</div>
 
 
 
-	<link rel="script" type="text/css" href="assets/script/script.js">
+
+
+<script src=“https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js“></script>
+<link rel="script" type="text/css" href="assets/script/script.js">
+
 </body>
 </html>
