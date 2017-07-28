@@ -46,7 +46,7 @@ database.ref("employee").on("child_added",  function(snapshot){
 	console.log(snapshot.val().startDate);
 	console.log(snapshot.val().rate);
 
-	$("#employeeData").append("<div class='well'><span id='employee-name'>" + snapshot.val().name + " </span><span id='employee-role'> " + snapshot.val().role + " <span id='start-date'> " + snapshot.val().startDate + " <span id='employee-rate'> " + snapshot.val().rate + " </span></div>");
+	$("#employeeData").append("<div class='well'><span id='thename'>" + snapshot.val().name + " </span><span id='therole'> " + snapshot.val().role + " <span id='thedate'> " + snapshot.val().startDate + " <span id='theate'> " + snapshot.val().rate + " </span></div>");
 
 }, function(errorObject){
 	console.log("Errors Handled: " + errorObject.code);
