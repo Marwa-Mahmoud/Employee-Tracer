@@ -4,8 +4,8 @@
 	<title>Employee Tracker</title>
 	<!-- Latest compiled and minified CSS -->
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
@@ -32,21 +32,21 @@
 			<form>
  			<div class="form-group" id="search-parameters">
     			<label for="exampleInputEmail1">Employee Name</label>
-   				<input type="text" class="form-control" id="search-term" placeholder="Name">
+   				<input type="text" class="form-control" id="employee-name" placeholder="Name">
   			</div>
   			<div class="form-group">
     			<label for="exampleInputPassword1">Role</label>
-    			<input type="text" class="form-control" id="records-numbers" placeholder="Role">
+    			<input type="text" class="form-control" id="employee-role" placeholder="Role">
   			</div>
     		<div class="form-group">
     			<label for="exampleInputPassword1">Start Date</label>
-    			<input type="text" class="form-control" id="start-year" placeholder="Date">
+    			<input type="text" class="form-control" id="start-date" placeholder="Date">
   			</div>
     		<div class="form-group">
     			<label for="exampleInputPassword1">Monthly Rate</label>
-    			<input type="text" class="form-control" id="end-year" placeholder="Rate">
+    			<input type="text" class="form-control" id="employee-rate" placeholder="Rate">
   			</div>
-  				<button type="submit" class="btn btn-default" id="search">Add</button>
+  				<button type="submit" class="btn btn-default" id="add-employee">Add</button>
   			 	
 			</form>
 		</div>
@@ -56,9 +56,15 @@
 
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<script src=“https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js“></script>
-<link rel="script" type="text/css" href="assets/script/script.js">
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+
+<script type="text/javascript" src="logic.js"> </script>
+
+</script>
 
 </body>
 </html>
+  
